@@ -1,0 +1,155 @@
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+3:25:46 AM [express] serving on port 5000
+Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+3:33:52 AM [express] GET /api/auth/user 401 in 2ms :: {"message":"Unauthorized"}
+3:35:17 AM [vite] hmr update /src/pages/landing.tsx, /src/index.css?v=x77OauTioOpduWPOel20x
+express deprecated req.host: Use req.hostname instead file:/home/runner/workspace/node_modules/openid-client/build/passport.js:224:49
+3:35:26 AM [express] GET /api/login 302 in 545ms
+3:35:27 AM [express] GET /api/login 302 in 19ms
+3:35:28 AM [express] GET /api/login 302 in 73ms
+3:35:35 AM [vite] hmr update /src/pages/dashboard.tsx, /src/index.css?v=x77OauTioOpduWPOel20x
+3:35:43 AM [vite] hmr update /src/pages/dashboard.tsx, /src/index.css?v=x77OauTioOpduWPOel20x (x2)
+3:35:47 AM [express] GET /api/logout 302 in 186ms
+3:35:55 AM [express] GET /api/callback 302 in 426ms
+3:35:58 AM [express] GET /api/auth/user 200 in 55ms :: {"id":"44548551","email":"calvin.amedume1234@…
+3:35:58 AM [express] GET /api/timetables 200 in 62ms :: []
+3:36:11 AM [express] GET /api/announcements 200 in 243ms :: [{"id":7,"title":"Fire Drill Tomorrow","…
+3:36:18 AM [express] GET /api/room-changes 200 in 55ms :: [{"id":1,"subject":"Mathematics","teacher"…
+3:36:37 AM [express] GET /api/logout 302 in 180ms
+3:36:40 AM [express] GET /api/auth/user 401 in 30ms :: {"message":"Unauthorized"}
+3:41:01 AM [vite] hmr update /src/pages/landing.tsx, /src/index.css?v=x77OauTioOpduWPOel20x
+3:41:13 AM [vite] hmr update /src/pages/landing.tsx, /src/index.css?v=x77OauTioOpduWPOel20x (x2)
+3:41:51 AM [vite] hmr update /src/pages/landing.tsx, /src/index.css?v=x77OauTioOpduWPOel20x (x3)
+3:42:01 AM [express] GET /api/login 302 in 30ms
+3:42:27 AM [express] GET /api/callback 302 in 493ms
+3:42:30 AM [express] GET /api/auth/user 200 in 54ms :: {"id":"44548551","email":"calvin.amedume1234@…
+3:42:30 AM [express] GET /api/timetables 304 in 72ms :: []
+3:49:33 AM [vite] hmr update /src/pages/dashboard.tsx, /src/index.css?v=x77OauTioOpduWPOel20x
+3:51:06 AM [vite] hmr update /src/pages/dashboard.tsx, /src/index.css?v=x77OauTioOpduWPOel20x (x2)
+PG Pool error: error: terminating connection due to administrator command
+    at Parser.parseErrorMessage (/home/runner/workspace/node_modules/pg-protocol/src/parser.ts:368:69)
+    at Parser.handlePacket (/home/runner/workspace/node_modules/pg-protocol/src/parser.ts:187:21)
+    at Parser.parse (/home/runner/workspace/node_modules/pg-protocol/src/parser.ts:102:30)
+    at TLSSocket.<anonymous> (/home/runner/workspace/node_modules/pg-protocol/src/index.ts:7:48)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:191:23) {
+  length: 116,
+  severity: 'FATAL',
+  code: '57P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '3289',
+  routine: 'ProcessInterrupts',
+  client: Client {
+    _events: [Object: null prototype] { error: [Function (anonymous)] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    connectionParameters: ConnectionParameters {
+      user: 'neondb_owner',
+      database: 'neondb',
+      port: 5432,
+      host: 'ep-dry-sun-afz5zfk1.c-2.us-west-2.aws.neon.tech',
+      binary: false,
+      options: undefined,
+      ssl: {},
+      client_encoding: '',
+      replication: undefined,
+      isDomainSocket: false,
+      application_name: undefined,
+      fallback_application_name: undefined,
+      statement_timeout: false,
+      lock_timeout: false,
+      idle_in_transaction_session_timeout: false,
+      query_timeout: false,
+      connect_timeout: 0
+    },
+    user: 'neondb_owner',
+    database: 'neondb',
+    port: 5432,
+    host: 'ep-dry-sun-afz5zfk1.c-2.us-west-2.aws.neon.tech',
+    replication: undefined,
+    _Promise: [Function: Promise],
+    _types: TypeOverrides { _types: [Object], text: {}, binary: {} },
+    _ending: true,
+    _ended: false,
+    _connecting: false,
+    _connected: true,
+    _connectionError: false,
+    _queryable: false,
+    connection: Connection {
+      _events: [Object: null prototype],
+      _eventsCount: 23,
+      _maxListeners: undefined,
+      stream: [TLSSocket],
+      _keepAlive: false,
+      _keepAliveInitialDelayMillis: 0,
+      lastBuffer: false,
+      parsedStatements: {},
+      ssl: {},
+      _ending: true,
+      _emitMessage: false,
+      _connecting: true,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    queryQueue: [],
+    binary: false,
+    processID: 1043374113,
+    secretKey: -605065747,
+    ssl: {},
+    _connectionTimeoutMillis: 0,
+    _connectionCallback: null,
+    saslSession: null,
+    release: [Function (anonymous)],
+    activeQuery: null,
+    readyForQuery: true,
+    hasExecuted: true,
+    _poolUseCount: 2,
+    [Symbol(shapeMode)]: false,
+    [Symbol(kCapture)]: false
+  }
+}
+3:52:15 AM [express] GET /api/logout 302 in 2168ms
+3:52:20 AM [express] GET /api/auth/user 401 in 32ms :: {"message":"Unauthorized"}
+3:53:43 AM [express] GET /api/login 302 in 140ms
+3:53:51 AM [express] GET /api/callback 302 in 336ms
+3:53:54 AM [express] GET /api/auth/user 200 in 55ms :: {"id":"44548551","email":"calvin.amedume1234@…
+3:53:55 AM [express] GET /api/timetables 304 in 58ms :: []
+3:54:01 AM [express] GET /api/announcements 304 in 76ms :: [{"id":7,"title":"Fire Drill Tomorrow","c…
+3:54:04 AM [express] GET /api/room-changes 304 in 55ms :: [{"id":1,"subject":"Mathematics","teacher"…
+3:54:23 AM [express] GET /api/logout 302 in 210ms
+3:54:27 AM [express] GET /api/auth/user 401 in 35ms :: {"message":"Unauthorized"}
+3:55:26 AM [express] GET /api/login 302 in 151ms
+3:55:32 AM [express] GET /api/callback 302 in 283ms
+3:55:35 AM [express] GET /api/auth/user 200 in 48ms :: {"id":"44548551","email":"calvin.amedume1234@…
+3:55:35 AM [express] GET /api/timetables 304 in 46ms :: []
+3:55:38 AM [express] GET /api/announcements 304 in 61ms :: [{"id":7,"title":"Fire Drill Tomorrow","c…
+3:55:38 AM [express] GET /api/room-changes 304 in 47ms :: [{"id":1,"subject":"Mathematics","teacher"…
+3:59:10 AM [express] GET /api/auth/user 304 in 121ms :: {"id":"44548551","email":"calvin.amedume1234…
+3:59:10 AM [express] GET /api/timetables 304 in 51ms :: []
+4:01:23 AM [express] GET /api/logout 302 in 2497ms
+4:01:28 AM [express] GET /api/auth/user 401 in 34ms :: {"message":"Unauthorized"}
+4:03:47 AM [express] GET /api/login 302 in 170ms
+4:03:48 AM [express] GET /api/login 302 in 32ms
+4:04:02 AM [express] GET /api/callback 302 in 2491ms
+4:04:05 AM [express] GET /api/auth/user 200 in 51ms :: {"id":"44548551","email":"calvin.amedume1234@…
+4:04:05 AM [express] GET /api/timetables 304 in 54ms :: []
+4:04:07 AM [express] GET /api/announcements 304 in 73ms :: [{"id":7,"title":"Fire Drill Tomorrow","c…
+4:04:08 AM [express] GET /api/room-changes 304 in 52ms :: [{"id":1,"subject":"Mathematics","teacher"…
